@@ -26,7 +26,8 @@ export default function Home() {
     setUserInfo({ ...userInfo, [name]: value })
     setLoginInfo({ ...loginInfo, [name]: value })
   }
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState({
+  });
   const [isSubmit, setIsSubmit] = useState(false);
   const validateForm = () => {
     const newErrors = {};
@@ -61,9 +62,9 @@ export default function Home() {
   const navigate = useNavigate()
   const toLogin = (e) => {
     e.preventDefault();
-    const formCheck = validateForm();
+    const formIsValid = validateForm();
     setIsSubmit(true)
-    if (Object.keys(errors).length === 0 && formCheck) {
+    if (Object.keys(errors).length === 0 && formIsValid) {
       axios.post(`http://localhost:4000/login/user-login`, loginInfo).then((response) => {
         console.log(response);
         if(response.data.role=='user'){
