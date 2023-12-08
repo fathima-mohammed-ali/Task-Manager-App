@@ -1,0 +1,102 @@
+.container-fluid{
+    background-image: url('https://i.pinimg.com/564x/ab/16/8b/ab168b2a7a8a348bf0b91f3eef2e53c6.jpg');
+    background-size: 100%;
+    overflow: hidden;
+}
+.sidebar{
+    width: 256px;
+    border-radius: 0%;
+    opacity: 1;
+    top: 0%;
+    position: fixed;
+    height: 100%;
+    background-color:  #ff7a00;
+    z-index: 100;
+    cursor:pointer;
+}
+.sidebar:hover {
+    box-shadow: 5px 5px 40px 0 rgba(255, 0, 0, .101);
+    left: 1%;
+    transition: .2s ease-in-out;
+}
+#links{
+ margin-left:55px;
+ text-align: left;  
+ text-decoration-line:none ;
+ color: white;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 900;
+ font-size: 4vh;
+}
+#links:hover{
+    color: black;
+    box-shadow: inset 4px 4px 15px 0 #00000018;
+    transition: 50ms ease-in-out;
+    border-radius: 15px;
+    padding: 10px 15px;
+    text-align: left;
+}
+#heading{
+    margin-top: 150px;
+    margin-left:100px;
+    text-align: left;  
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 10vh; 
+}
+#para{
+    margin-left:100px;
+    text-align: left;  
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 4vh;  
+    animation-delay: 1s;     
+}
+#form{
+    animation-delay: 2s;  
+}
+
+@media (max-width: 700px) {
+     .container-fluid{
+        background-position: center;
+        background-size: cover;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+     }
+      #heading{
+        margin-left:90px;  
+      } 
+      #form{
+        width:250px ;
+      }
+      .sidebar{
+        width: 210px;
+    } 
+    #links{
+        font-size: 3vh;
+    }  
+  }
+
+@media (max-width: 830px) {
+   .parent-div{
+      background-size: cover;
+      min-height: 50vh;
+     
+   }
+    #heading{
+      margin-left:90px;  
+    } 
+}
+  @media (max-width: 990px) {
+    .container-fluid{
+       width: fit-content;
+       background-size: cover;
+      
+    }
+     #heading{
+       margin-left:90px;  
+     } 
+    }
+

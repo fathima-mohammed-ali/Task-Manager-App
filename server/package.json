@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Task-manager-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Task-Manager-App"
+  },
+  "author": "Fathima",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.2"
+  }
+}
